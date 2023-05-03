@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+form{
+    width: 600px;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
+    color: #333;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+.box1{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+    background-color: gainsboro;
+}
+.div1{
+    display: inline-block;
+}
+.box2{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0 15px 0;
+    background-color: gainsboro;
+}
+.btn{
+    width: 49%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #333;
+    color: #fff;
+}
+@media screen and (max-width: 500px){
+    body{
+        padding: 20px;
+    }
+    form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .div1{
+        display: block;
+    }
+    .box2{
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <form action="action">
+        <h1>Pagamento</h1>
+        <label for="nome">Nome do Cliente</label><br>
+        <input class = "box1" type="text" name="Nome" id="Nome" placeholder="Digite Nome"><br>
+        <label for="Pemail">E-mail</label><br>
+        <input class= "box1" type= "text" name= "E-mail" id="E-mail"placeholder= "Digite seu Nome"><br>
+        <label for="NumCartão">Código de Cartão</label><br>
+        <input class= "box1" type="password" name="Numero" id="Numero" placeholder="1234 1234 1234 1234"><br>
+        <div class="div1">
+            <label for="cardex">Mês de expiramento</label><br>
+            <input class= "box2" type="mês" name="mês" id="mês" placeholder="MM"><br>
+        </div>
+        <div class="div1">
+            <label for="cardeye">Ano de expiramento</label><br>
+            <input class= "box2" type="Ano" name="Ano" id="Ano" placeholder="AAAA"><br>
+        </div>
+        <div class="div1">
+            <label for="cvc">CVC</label><br>
+            <input class= "box2" type="CVC" name="CVC" id="CVC" placeholder="---- ---- ---- ----"><br>
+        </div>
+        <button class= "btn" type="button">Pague Agora</button>
+        <button class= "btn" type="button">Fechar</button>
+    </form> 
+</body>
+</html>
