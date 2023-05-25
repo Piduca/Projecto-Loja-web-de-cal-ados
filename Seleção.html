@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calçado</title>
+	<link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+    }
+    header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+    font-size: 24px;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        background-color: #f5f5f5;
+    }
+    .left-side-menu{
+        display: flex;
+        gap: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 5px;
+        background-color: #333;
+        color: #fff;
+        transition: all 0.3e ease;
+    }
+    .right-side-menu{
+        display: flex;
+        align-items: center;
+    }
+    .line{
+        height: 1px;
+        background-color: #ddd;
+        width: 90%;
+    }
+    .icon{
+	font-size: 2em;
+    }
+    .btn{
+	background-color: #333;
+	color: #fff;
+	text-align: start;
+	display: flex;
+    }
+</style>
+<body>
+    <header>
+		<h1>Loja de Calçados</h1>
+	</header>
+    <div class="menu">
+        <div class="left-side-menu">
+    <a href="calçados.html"><i class="fa-solid fa-house icon"></i></a>
+    <nav>
+    <ul>
+        <li><a href="homen.html">Homem</a></li>
+        <li><a href="mulher.html">Mulher</a></li>
+    </ul>
+    </nav>
+    </div>
+
+    <div class="right-side-menu">
+    <input type="search" id="Pesquisar" name="Pesquisar" placeholder="Pesquisar">
+	<button class= "btn" type="submit">Buscar</button>
+    </div>
+    </div>
+    <div class="line"></div>
+</body>
+</html>
