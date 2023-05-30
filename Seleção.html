@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calçado</title>
-	<link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
 <style>
     body{
@@ -21,6 +20,8 @@
 	padding: 20px;
 	text-align: center;
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
     }
     h1{
         margin: 0;
@@ -34,7 +35,7 @@
     }
     .left-side-menu{
         display: flex;
-        gap: 20px;
+        gap: 10px;
     }
     nav ul li{
         display: inline-block;
@@ -53,13 +54,30 @@
         display: flex;
         align-items: center;
     }
-    .line{
-        height: 1px;
-        background-color: #ddd;
-        width: 90%;
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh -85px);
     }
-    .icon{
-	font-size: 2em;
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        width: 0%;
+    }
+    .items{
+        align-items: flex-end;
+    }
+    .select-image{
+        max-width: 500px;
+        border-radius: 10px;
+    }
+    .select-image img{
+        max-width: 500px;
+    }
+    .right-side{
+        width: 5%;
     }
     .btn{
 	background-color: #333;
@@ -74,7 +92,6 @@
 	</header>
     <div class="menu">
         <div class="left-side-menu">
-    <a href="calçados.html"><i class="fa-solid fa-house icon"></i></a>
     <nav>
     <ul>
         <li><a href="homen.html">Homem</a></li>
@@ -88,6 +105,34 @@
 	<button class= "btn" type="submit">Buscar</button>
     </div>
     </div>
-    <div class="line"></div>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="lef-side">
+                    <div class="items">
+                        <div class="select-image">
+                        <img src="hsp1.jpg">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right-side"></div>
+                <h1>Sapato de Couro marrom elegante</h1>
+                <p>Esses sapatos são perfeitos para qualquer ocasião, além de claro serem extremamente confortáveis</p> 
+                <span class="price">***$</span>
+                <span class="off">---$</span>
+                <div class="options">
+                    <div class="amount">
+                        <div class="minus">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
