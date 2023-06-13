@@ -1,4 +1,3 @@
-
 const form = document.querySelector('form');
 const emailInput = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
@@ -30,9 +29,12 @@ form.addEventListener('submit', function(event) {
   } else {
     passwordError.textContent = '';
   }
-});
 
-// Validar domínio do e-mail
+  if (emailInput.validity.valid && passwordInput.validity.valid) {
+    window.location.href = "calcados.html";
+    }
+});
+  // Validar domínio do e-mail
 emailInput.addEventListener('input', function(event) {
   const value = event.target.value;
   if (value.includes('@')) {

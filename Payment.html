@@ -52,6 +52,7 @@ h1{
     border-radius: 15px;
     background-color: #333;
     color: #fff;
+    cursor: pointer;
 }
 @media screen and (max-width: 500px){
     body{
@@ -90,8 +91,30 @@ h1{
             <label for="cvc">CVC</label><br>
             <input class= "box2" type="CVC" name="CVC" id="CVC" placeholder="---- ---- ---- ----"><br>
         </div>
-        <button class= "btn" type="button">Pague Agora</button>
+        <button id="purchase-button" class= "btn" type="button">Pague Agora</button>
         <button class= "btn" type="button">Fechar</button>
     </form> 
+    <script>
+        var purchaseButton = document.getElementById('purchase-button');
+
+        purchaseButton.addEventListener('click', function () {
+            var nome = document.getElementById('Nome').value;
+            var email = document.getElementById('E-mail').value;
+            var numeroCartao = document.getElementById('Numero').value;
+            var mesExpiracao = document.getElementById('mes').value;
+            var anoExpiracao = document.getElementById('ano').value;
+            var cvc = document.getElementById('cvc').value;
+            var password = document.getElementById('password').value;
+
+            if (password.length < 8) {
+                alert('A senha precisa ter pelo menos 8 caracteres');
+            } else if (!nome || !email || !numeroCartao || !mesExpiracao || !anoExpiracao || !cvc) {
+                alert('Todos os campos são obrigatórios. Preencha-os corretamente.');
+            } else {
+                alert('Compra efetuada com sucesso');
+                window.location.href = 'Calcados.html';
+            }
+        });
+    </script>
 </body>
 </html>
