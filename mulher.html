@@ -21,13 +21,15 @@
 
     <div class="right-side-menu">
     <input class= "procura" type="search" id="Pesquisar" name="Pesquisar" placeholder="Pesquisar">
-	<button class= "btn" type="submit">Buscar</button>
+	<button class= "btn" type="submit" onclick="realizarPesquisa()">Buscar</button>
+	<a href="Carrinho.html"><img class="cart" src="icon-cart.svg"></a>
+	<button onclick="logout()"><img class= "cart" src="send-file.png"></button>
     </div>
     </div>
 
 	<main>
 		<div class="product">
-			<a href="Mod-select.html"><img src="msp1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Raiders vermelho. </p>
 			<br>
@@ -37,7 +39,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp2.jfif" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp2.jfif" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Sandália. </p>
 			<br>
@@ -47,7 +49,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp3.jfif" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp3.jfif" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Sandália preta em cetim.</p>
 			<br>
@@ -57,7 +59,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp4.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp4.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Sandália ramarim, salto alto. </p>
 			<br>
@@ -67,7 +69,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp5.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp5.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Sapato Bege de Salto Raso para Cerimónia. </p>
 			<br>
@@ -77,7 +79,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp6.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp6.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Sandália Papete. </p>
 			<br>
@@ -87,7 +89,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp7.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image"src="msp7.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Ténis Vans. </p>
 			<br>
@@ -97,7 +99,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp8.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="msp8.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Sapato salto alto elegante (10CM). </p>
 			<br>
@@ -107,7 +109,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp9.jpg" alt="Calçado"></a>
+			<a href="Mod-select.html"><img class= "image" src="msp9.jpg" alt="Calçado"></a>
 			<h2>Calçado </h2>
 			<p>Sandália de salto com bordado. </p>
 			<br>
@@ -117,7 +119,7 @@
 		</div>
 
 		<div class="product">
-			<a href=""><img src="msp10.jpg" alt="Calçado"></a>
+			<a href="Mod-select.html"><img class= "image" src="msp10.jpg" alt="Calçado"></a>
 			<h2>Calçado </h2>
 			<p>Mocassim Boska Feminino. </p>
 			<br>
@@ -180,6 +182,26 @@
 				}
 			});
 		});
+		function realizarPesquisa() {
+			// Obter o valor do campo de pesquisa
+			var searchTerm = document.getElementById('Pesquisar').value;
+
+			// Verificar se o campo de pesquisa está vazio
+			if (searchTerm.trim() === '') {
+				alert('Por favor, digite algo para pesquisar.');
+				return;
+			}
+
+			// Realizar ação de pesquisa - substitua esse trecho com a lógica adequada para sua aplicação
+			alert('Realizando pesquisa por: ' + searchTerm);
+		}
+		function logout() {
+			// Exibir o alerta de "sessão encerrada"
+			alert("Sessão encerrada");
+
+			// Redirecionar para a página de login
+			window.location.href = "login-DESKTOP-VB3R7G3.html";
+		}
 	</script>
 </body>
 </html>

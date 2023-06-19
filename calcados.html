@@ -29,11 +29,13 @@
     <div class="right-side-menu">
     <input class= "procura" type="search" id="Pesquisar" name="Pesquisar" placeholder="Pesquisar">
 	<button class= "btn" type="submit">Buscar</button>
+	<a href="Carrinho.html"><img class="cart" src="icon-cart.svg"></a>
+	<button onclick="logout()"><img class= "cart" src="send-file.png"></button>
     </div>
     </div>
 	<main>
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1pg" alt="Calçado"></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1pg" alt="Calçado"></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -43,7 +45,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado2.jpg" alt="Calçado"></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado2.jpg" alt="Calçado"></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -53,7 +55,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado3.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado3.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -63,7 +65,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado"></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1.jpg" alt="Calçado"></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -73,7 +75,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -83,7 +85,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -93,7 +95,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -103,7 +105,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -113,7 +115,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image"src="img/calcado1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -123,7 +125,7 @@
 		</div>
 
 		<div class="product">
-			<a href="Mod-select.html"><img src="img/calcado1.jpg" alt="Calçado "></a>
+			<a href="Mod-select.html"><img class= "image" src="img/calcado1.jpg" alt="Calçado "></a>
 			<h2>Calçado </h2>
 			<p>Descrição do calçado.</p>
 			<br>
@@ -186,6 +188,13 @@
 				}
 			});
 		});
+		function logout() {
+			// Exibir o alerta de "sessão encerrada"
+			alert("Sessão encerrada");
+
+			// Redirecionar para a página de login
+			window.location.href = "login-DESKTOP-VB3R7G3.html";
+		}
 	</script>
 </body>
 </html>

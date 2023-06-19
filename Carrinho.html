@@ -60,6 +60,7 @@ nav ul li a{
 .right-side-menu{
     display: flex;
     align-items: center;
+	gap: 5px;
 }
 	.carrinho {
 	border: 1px solid #ccc;
@@ -78,6 +79,14 @@ nav ul li a{
 	cursor: pointer;
     border-radius: 10px;
 	}
+	.cart{
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
 	</style>
 </head>
 <body>
@@ -98,6 +107,7 @@ nav ul li a{
     <div class="right-side-menu">
     <input class= "procura" type="search" id="Pesquisar" name="Pesquisar" placeholder="Pesquisar">
 	<button class= "btn" type="submit">Buscar</button>
+	<button onclick="logout()"><img class= "cart" src="send-file.png"></button>
     </div>
     </div>
 	<main>
@@ -139,6 +149,13 @@ nav ul li a{
         // Redirecionar para a página de produtos ou outra página desejada
         window.location.href = 'Payment.html';
     });
+	function logout() {
+			// Exibir o alerta de "sessão encerrada"
+			alert("Sessão encerrada");
+
+			// Redirecionar para a página de login
+			window.location.href = "login-DESKTOP-VB3R7G3.html";
+		}
 	</script>
 </body>
 </html>
